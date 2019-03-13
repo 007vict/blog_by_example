@@ -14,6 +14,7 @@ SECRET_KEY = '^!ey8hkfzyd&d_2%=uf8*-c0d6x7(tam0nuui52zvcohp7n!&0'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+SITE_ID = 1
 
 
 # Application definition
@@ -25,6 +26,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     'blog',
     'taggit',
 ]
