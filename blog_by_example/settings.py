@@ -1,6 +1,6 @@
 import os
 import django_heroku
-django_heroku.settings(locals())
+
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -119,7 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/blog/static/'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 EMAIL_HOST = 'smtp.mail.ru'
@@ -130,6 +130,8 @@ EMAIL_USE_TLS = True
 # EMAIL_USE_SSL = True
 SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+django_heroku.settings(locals())
 
 
 
