@@ -119,7 +119,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/blog/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 EMAIL_HOST = 'smtp.mail.ru'
 EMAIL_PORT = 2525
@@ -129,5 +130,7 @@ EMAIL_USE_TLS = True
 # EMAIL_USE_SSL = True
 SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
